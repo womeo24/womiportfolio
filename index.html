@@ -10,24 +10,42 @@
       rel="stylesheet"
     />
   </head>
+  <script src="./script.js"></script>
+  <script></script>
 
   <body class="h-full w-full bg-gray-300 scroll-behavior: smooth;">
-    <header class="bg-black text-white h-full w-full">
-      <nav class="flex justify-between px-4 p-2">
+    <header class="text-white h-full w-full">
+      <nav class="flex border border-2 border-b right-0 left-0  w-full justify-between px-4 p-2">
         <div>
           <h1 class="text-blue-600">Logo</h1>
         </div>
 
-        <ul class="md:flex hidden space-x-4"> 
+        <ul class="md:flex pt-10 md:pt-0 hidden space-x-4">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
           <li>Contact</li>
         </ul>
 
-        <div class="md:hidden">&#9776;</div>
+        <div onclick="clickMenu()" class="md:hidden cursor-pointer">
+          &#9776;
+        </div>
       </nav>
     </header>
+
+    
+    <!-- for mobile screen link -->
+    <div
+      id="myLinks"
+      class="w-full text-white text-center h-screen p-6 hidden pt-10 md:pt-0 space-x-4"
+    >
+      <ul class="space-y-6">
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">About</li>
+        <li class="cursor-pointer">Skills</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+    </div>
 
     <!-- hero content -->
     <div
